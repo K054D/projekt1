@@ -16,17 +16,18 @@ body {
     
    
    
-    background: url(index_background.jpg);
+    background: url(bg_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
 }
 
 .header {
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
     text-align: center;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 .header h1 {
@@ -40,14 +41,33 @@ body {
     text-shadow: 2px 3px 8px rgba(0,0,0,1);
     
 }
-
+.header_img{
+    width: auto;
+    height: 100%;
+    
+}
 
 .container{
     position: relative;
     scroll-snap-type: y mandatory;
     height: 100vh;
     overflow-y: scroll;
+    
+    
+    
 }
+.container::-webkit-scrollbar {
+    width: 10px;
+    z-index: 11;
+  }
+
+.container::-webkit-scrollbar-track {
+    background-color: rgb(150, 135, 136);
+  }
+  
+.container::-webkit-scrollbar-thumb {
+    box-shadow: inset 1px 1px 6px rgb(77, 28, 28);
+  }
 .section{
     position: relative;
     background: black;
@@ -57,11 +77,13 @@ body {
     color: grey;
     height: 50vh;
     text-align: justify;
+    
 }
 .section p{
     font-size: 2vh;
 
 }
+
 .scroll{
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -75,7 +97,8 @@ nav {
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 90%;
-    z-index: 9999;
+    z-index: 5;
+    
 }
 
 .nav-links ul li{
@@ -83,6 +106,7 @@ nav {
     display: block;
     float: right;
     margin-right: 1rem;
+    
 }
 
 .nav-links {
@@ -93,15 +117,21 @@ nav {
 .nav-links a {
     font-size: 1.5rem;
     text-decoration: none;
-    background-color: gray;
+    background-color: rgb(204, 204, 204);
     padding: 8px 16px;
     transition: .7s;
-    
-    
+    color: black ;
+
+
+}
+.nav-links a:active{
+    background-color: rgb(151, 151, 151);
+    transition: none;
 }
 
 .nav-links a:hover {
     padding: 8px 160px 8px 16px;
-    
+
 }
+
 
