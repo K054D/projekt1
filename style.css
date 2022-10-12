@@ -67,3 +67,41 @@ body {
     scroll-snap-stop: always;
 }
 
+nav {
+    display: flex;
+    padding: 1% 6%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 90%;
+    z-index: 9999;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: block;
+    float: right;
+    margin-right: 1rem;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: gray;
+    padding: 8px 16px;
+    transition: .7s;
+    
+    
+}
+
+.nav-links a:hover {
+    padding: 8px 160px 8px 16px;
+    
+}
+
