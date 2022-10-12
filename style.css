@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+.background{
+    height: 120vh;
+    width: 100%;
+    background-image: url(index_background.jpg);
+    background-size: cover;
+
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10vw;
+}
