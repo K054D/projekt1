@@ -1,18 +1,69 @@
-*{
+html {
     margin: 0;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
-
 }
-.background{
-    height: 120vh;
-    width: 100%;
-    background-image: url(index_background.jpg);
+body {
+    
+    color: white;
+    margin: 0;
+    padding: 0;
+    
+    
+   
+   
+    background: url(index_background.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+}
+
+.header {
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8vw;
+    font-weight: 1000;
+    text-shadow: 2px 3px 8px rgba(0,0,0,1);
+    
+}
+
+
+.container{
+    position: relative;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.section{
+    position: relative;
+    background: black;
+    line-height: 4vh;
+    font-weight: lighter;
+    padding: 40px;
+    color: grey;
+    height: 50vh;
+    text-align: justify;
+}
+.section p{
+    font-size: 2vh;
 
 }
-h1{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 10vw;
+.scroll{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
+
