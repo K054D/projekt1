@@ -117,7 +117,7 @@ nav {
 .nav-menu a {
     font-size: 1.2rem;
     text-decoration: none;
-    transition: .7s;
+    transition: 1s;
     color: white ;
     border: solid 2px white;
     border-radius: 3px;
@@ -127,7 +127,7 @@ nav {
 }
 
 .nav-menu a:hover {
-    background-position: 300px 0px;
+    background-position: 350px 0px;
     color: black;
     text-shadow: 2px 3px 8px rgba(0,0,0,.6);
 }
