@@ -37,6 +37,22 @@ body {
     text-shadow: 2px 3px 8px rgba(0,0,0,1);
     
 }
+
+.vararr {
+    font-size: 4vw !important;
+} 
+
+.header p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 300%);
+    font-size: 1vw;
+    font-weight: 1000;
+    text-shadow: 2px 3px 8px rgba(0,0,0,1);
+}
+
 .header_img{
     width: auto;
     height: 100%;
@@ -151,6 +167,274 @@ nav {
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
+
+
+
+
+.infobox a{
+    margin:0;
+    transition:all .4s;
+    -webkit-transition:all .4s;
+    -o-transition:all .4s;
+    -moz-transition:all .4s
+}
+
+.infobox a:focus{
+    outline:none!important
+}
+
+.infobox a:hover{
+    text-decoration:none
+}
+
+.infobox h1,h2,h3,h4,h5,h6{
+    margin:0
+}
+
+.infobox p{
+    margin:0
+}
+
+.infobox ul,li{
+    margin:0;
+    list-style-type:none
+}
+
+.infobox input{
+    display:block;
+    outline:none;
+    border:none!important
+}
+
+.infobox textarea{
+    display:block;
+    outline:none
+}
+
+.infobox textarea:focus,input:focus{
+    border-color:transparent!important
+}
+
+.infobox button{
+    outline:none!important;
+    border:none;
+    background:0 0}
+
+.infobox button:hover{
+    cursor:pointer
+}
+
+iframe{
+    border:none!important
+}
+
+.limiter{
+    width:100%;
+    margin:0 auto}
+
+ .container-table100{
+    width:100%;
+    min-height:100vh;
+    background:#c850c0;
+    background:-webkit-linear-gradient(45deg,#4158d0,#c850c0);
+    background:-o-linear-gradient(45deg,#4158d0,#c850c0);
+    background:-moz-linear-gradient(45deg,#4158d0,#c850c0);
+    background:linear-gradient(45deg,#4158d0,#c850c0);
+    display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:33px 30px
+}
+
+.infobox .wrap-table100{
+    width:1170px
+}
+
+.infobox table{
+    border-spacing:1;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    width:100%;
+    margin:0 auto;
+    position:relative
+}
+
+.infobox table *{
+    position:relative
+}
+
+.infobox table td,table th{
+    padding-left:8px
+}
+
+.infobox table thead tr{
+    height:60px;
+    background:#36304a
+}
+
+.infobox table tbody tr{
+    height:50px
+}
+
+.infobox table tbody tr:last-child{
+    border:0
+}
+
+.infobox table td,table th{
+    text-align:left
+}
+
+.infobox table td.l,table th.l{
+    text-align:right
+}
+
+.infobox table td.c,table th.c{
+    text-align:center
+}
+
+.infobox table td.r,table th.r{
+    text-align:center
+}
+
+ .table100-head th{
+    font-family:OpenSans-Regular;
+    font-size:18px;
+    color:#fff;
+    line-height:1.2;
+    font-weight:unset
+}
+
+.infobox tbody tr:nth-child(even){
+    background-color:#f5f5f5
+}
+
+.infobox tbody tr{
+    font-family:OpenSans-Regular;
+    font-size:15px;
+    color:gray;
+    line-height:1.2;
+    font-weight:unset
+}
+
+.infobox tbody tr:hover{
+    color:#555;
+    background-color:#f5f5f5;
+    cursor:pointer
+}
+
+.column1{
+    width:260px;
+    padding-left:40px}
+
+.column2{
+    width:160px
+}
+
+ .column3{
+    width:245px
+}
+
+ .column4{
+    width:110px;text-align:right
+}
+
+ .column5{
+    width:170px;text-align:right
+}
+
+ .column6{
+    width:222px;text-align:right;padding-right:62px
+}
+
+
+
+@media screen and (max-width:992px)
+{
+    .infobox table{
+        display:block
+    }
+
+    .infobox table>*,table tr,table td,table th{display:block}
+    
+    .infobox table thead{display:none}
+    
+    .infobox table tbody tr{height:auto;padding:37px 0}
+    
+    .infobox table tbody tr td{padding-left:40%!important;margin-bottom:24px}
+    
+    .infobox table tbody tr td:last-child{margin-bottom:0}
+    
+    .infobox table tbody tr td:before{font-family:OpenSans-Regular;font-size:14px;color:#999;line-height:1.2;font-weight:unset;position:absolute;width:40%;left:30px;top:0}
+    
+    .infobox table tbody tr td:nth-child(1):before{content:"Date"}
+    
+    .infobox table tbody tr td:nth-child(2):before{content:"Order ID"}
+    
+    .infobox table tbody tr td:nth-child(3):before{content:"Name"}
+    
+    .infobox table tbody tr td:nth-child(4):before{content:"Price"}
+    
+    .infobox table tbody tr td:nth-child(5):before{content:"Quantity"}
+    
+    .infobox table tbody tr td:nth-child(6):before{content:"Total"}
+    
+    .column4,.column5,.column6{text-align:left}
+    
+    .column4,.column5,.column6,.column1,.column2,.column3{width:100%}
+    
+    .infobox tbody tr{font-size:14px}
+
+}
+
+@media(max-width:576px){
+    .container-table100{padding-left:15px;padding-right:15px}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1340px) {
     .nav-menu{
