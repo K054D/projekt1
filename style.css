@@ -83,6 +83,18 @@ body {
     scroll-snap-stop: always;
 }
 
+.c_example{
+    background-color: rgb(173, 173, 173);
+    color: black;
+    font-weight: bold;
+    font-size: 1.1vw;
+    border-radius: 10px;
+    margin: 2px;
+    width: calc(33% - (86px/3));
+    float: left;
+    padding-left: 1px;
+}
+
 nav {
     display: flex;
     padding: 1% 0%;
