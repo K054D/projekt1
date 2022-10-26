@@ -232,21 +232,7 @@ iframe{
     width:100%;
     margin:0 auto}
 
- .container-table100{
-    width:100%;
-    min-height:100vh;
-    background:#c850c0;
-    background:-webkit-linear-gradient(45deg,#4158d0,#c850c0);
-    background:-o-linear-gradient(45deg,#4158d0,#c850c0);
-    background:-moz-linear-gradient(45deg,#4158d0,#c850c0);
-    background:linear-gradient(45deg,#4158d0,#c850c0);
-    display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-wrap:wrap;
-    padding:33px 30px
-}
+ 
 
 .infobox .wrap-table100{
     width:1170px
@@ -301,7 +287,6 @@ iframe{
 }
 
  .table100-head th{
-    font-family:OpenSans-Regular;
     font-size:18px;
     color:#fff;
     line-height:1.2;
@@ -313,7 +298,6 @@ iframe{
 }
 
 .infobox tbody tr{
-    font-family:OpenSans-Regular;
     font-size:15px;
     color:gray;
     line-height:1.2;
@@ -327,27 +311,30 @@ iframe{
 }
 
 .column1{
-    width:260px;
+    width:3rem;
     padding-left:40px}
 
 .column2{
-    width:160px
+    width:3rem
 }
 
  .column3{
-    width:245px
+    width:3rem
 }
 
  .column4{
-    width:110px;text-align:right
+    width:3rem;
+    text-align:center
 }
 
  .column5{
-    width:170px;text-align:right
+    width:3rem;
+    text-align:center
 }
 
  .column6{
-    width:222px;text-align:right;padding-right:62px
+    width:3rem;
+    padding-left:62px
 }
 
 
@@ -358,35 +345,75 @@ iframe{
         display:block
     }
 
-    .infobox table>*,table tr,table td,table th{display:block}
+    .infobox table>*,table tr,table td,table th{
+        display:block
+    }
     
-    .infobox table thead{display:none}
+    .infobox table thead{
+        display:none
+    }
     
-    .infobox table tbody tr{height:auto;padding:37px 0}
+    .infobox table tbody tr{
+        height:auto;
+        padding:37px 0
+    }
     
-    .infobox table tbody tr td{padding-left:40%!important;margin-bottom:24px}
+    .infobox table tbody tr td{
+        padding-left:40%!important;
+        margin-bottom:24px
+    }
     
-    .infobox table tbody tr td:last-child{margin-bottom:0}
+    .infobox table tbody tr td:last-child{
+        margin-bottom:0
+    }
     
-    .infobox table tbody tr td:before{font-family:OpenSans-Regular;font-size:14px;color:#999;line-height:1.2;font-weight:unset;position:absolute;width:40%;left:30px;top:0}
+    .infobox table tbody tr td:before{
+        font-size:14px;
+        color:#999;
+        line-height:1.2;
+        font-weight:unset;
+        position:absolute;
+        width:40%;
+        left:30px;
+        top:0
+    }
     
-    .infobox table tbody tr td:nth-child(1):before{content:"Date"}
+    .infobox table tbody tr td:nth-child(1):before{
+        content:"Név"
+    }
     
-    .infobox table tbody tr td:nth-child(2):before{content:"Order ID"}
+    .infobox table tbody tr td:nth-child(2):before{
+        content:".NET osztály"
+    }
     
-    .infobox table tbody tr td:nth-child(3):before{content:"Name"}
+    .infobox table tbody tr td:nth-child(3):before{
+        content:"Leírás"
+    }
     
-    .infobox table tbody tr td:nth-child(4):before{content:"Price"}
+    .infobox table tbody tr td:nth-child(4):before{
+        content:"Szélesség"
+    }
     
-    .infobox table tbody tr td:nth-child(5):before{content:"Quantity"}
+    .infobox table tbody tr td:nth-child(5):before{
+        content:"Memóriabeli méret (btye)"
+    }
     
-    .infobox table tbody tr td:nth-child(6):before{content:"Total"}
+    .infobox table tbody tr td:nth-child(6):before{
+        content:"Tartomány"
+    }
     
-    .column4,.column5,.column6{text-align:left}
+    .column4,.column5,.column6{
+        text-align:left
+    }
     
-    .column4,.column5,.column6,.column1,.column2,.column3{width:100%}
+    .column4,.column5,.column6,.column1,.column2,.column3{
+        width:100%;
+        text-align:left
+    }
     
-    .infobox tbody tr{font-size:14px}
+    .infobox tbody tr{
+        font-size:14px
+    }
 
 }
 
