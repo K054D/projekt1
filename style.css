@@ -181,7 +181,19 @@ nav {
 }
 
 
+.sectionV {
+    position: relative;
+    background: black;
+    line-height: 4vh;
+    font-weight: lighter;
+    color: grey;
+    text-align: justify;
+    
+}
 
+.sectionV .content {
+    padding: 1% 10%;
+}
 
 .infobox a{
     margin:0;
@@ -246,9 +258,6 @@ iframe{
 
  
 
-.infobox .wrap-table100{
-    width:1170px
-}
 
 .infobox table{
     border-spacing:1;
@@ -256,6 +265,7 @@ iframe{
     background:#fff;
     border-radius:10px;
     overflow:hidden;
+    overflow-wrap: break-word;
     width:100%;
     margin:0 auto;
     position:relative
@@ -336,12 +346,12 @@ iframe{
 
  .column4{
     width:3rem;
-    text-align:center
+   
 }
 
  .column5{
     width:3rem;
-    text-align:center
+    
 }
 
  .column6{
@@ -354,7 +364,7 @@ iframe{
 @media screen and (max-width:992px)
 {
     .infobox table{
-        display:block
+        display:block;
     }
 
     .infobox table>*,table tr,table td,table th{
@@ -367,11 +377,16 @@ iframe{
     
     .infobox table tbody tr{
         height:auto;
-        padding:37px 0
+        padding:37px 0;
+        
+    }
+
+    .infobox tbody {
+        width: 100vw;
     }
     
     .infobox table tbody tr td{
-        padding-left:40%!important;
+        padding-left:50%!important;
         margin-bottom:24px
     }
     
