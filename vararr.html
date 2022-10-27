@@ -32,8 +32,208 @@
             <span class="bar"></span>
         </div>
     </nav>
+
+    <h1 class="title vararr">Változók és tömbök</h1>
+    <p>A program által mozgatott, módosított elemek</p>
+
     </section> 
+
+    <section class="section scroll content-varrarr">
+        <div>
+            <p>Változók és tömbök
+                A program által mozgatott, módosított elemek
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                Változók:
+                A változó egy olyan szimbolikus névvel ellátott absztrakt tárolóegység, amely ismert vagy ismeretlen mennyiségű információt tartalmaz, melyekre értékként tekintünk.
+                A programozási nyelvekben a változó úgy képzelhető el, mint egy hely, ami alkalmas egy érték tárolására a számítógép memóriájában. A változók alkalmazása a matematikában megszokotthoz hasonló kényelmes lehetőségeket biztosít.
+                A változó nevet kap, aminek segítségével a későbbiekben a változóban lévő objektumra hivatkozni lehet. Ez úgy működik, miként az emberek neve, amivel mások megszólíthatják. 
+                 Jellemzően a változó neve a memória néhány bájtjának címét jelenti, így a változóra vonatkozó művelet e memória rész tartalmát használja, vagy módosítja. Ez a név szerinti kötés. Ha nagy adatterület szükséges, vagy pillanatnyilag (a program készítésekor) nem ismert a mérete, akkor a változóban nem közvetlenül az adatot tároljuk, hanem csak a memória érintett részére mutató hivatkozást.
+                
+                A változók két fontos tulajdonságát külön ki kell emelni: az életciklust, és az érvényességi kört. A memória gazdaságossága érdekében a változónak az első használat előtt helyet kell biztosítani, a használat befejezésekor pedig fel kell szabadítani a területét. Az érvényességi kör segít meghatározni a változó életciklusát. A változó rendszerint a program kód valamelyik érvényességi körében van, tehát a változó a programrész aktiválódásakor keletkezik, majd megszűnik, amikor a programrész véget ér. 
+                Míg egy egyszerű változó egyetlen egészet, vagy szöveget tartalmaz, addig léteznek programnyelvek, amik megengedik az érték mellett az adat típusának tárolását is. Ezek a nyelvek paraméter szerinti többalakú függvények írását is lehetővé teszik. Ezek a változók az egyszerűekhez hasonlóan működnek, de a típusukat is hordozzák. 
+                A változók kétfélék lehetnek, van, amelyik új értéket is felvehet, és van, amelyik nem. 
+                Változónév
+                A változók olyan nevet kaphatnak, amit a programozási nyelv szintaktikája megenged, ajánlatos a megállapodásokat betartani, de ezeken túl egyéni ízlés kérdése. 
+                A C és a hozzá hasonló programozási nyelvekben a változók neve állhat betűkből, számokból, és tartalmazhatja az aláhúzás jelet, de mindenképpen betűvel kell kezdődnie. 
+                Egyes programnyelvekben a változó neve meghatározza a benne tárolható adat típusát. 
+                Érvényességi kör, hatókör
+                Érvényességi kör és hatókör megadja, hogy a változót a programszöveg mely részén használhatjuk, és a végrehajtás közben milyen körben rendelkezik majd értékkel.
+                A legtöbb programozási nyelvben a változók többféle érvényességi körrel is rendelkezhetnek. A változó érvényességi köre a programkód azon része, ahol a változó nevének jelentése van (használható, ismert). 
+                A globális változóra vagy egy korlátlan érvényességi körű változóra a program bármely részéből lehet hivatkozni. 
+                A változóra az érvényességi körén kívülről hivatkozni hibás és értelmetlen. 
+                Memóriabeli helyfoglalás
+                A létrehozott változó értékkel rendelkezik, ami valahol a számítógép memóriájában helyezkedik el. A program a memóriában helyezi el az adatobjektumokat, majd az újrafelhasználhatóság miatt az objektumok törlődnek, ha már nincs szükség a bennük tárolt értékre.
+                A memóriaváltozók kezelése nagymértékben függ a nyelvi környezettől. Néhány nyelvi megvalósítás könnyen felismeri azokat a változókat, amikre már nincs szükség a függvény befejeződése után. A lokális változók területe a végrehajtási verem részét képezi, ami automatikusan felszabadul, amikor a függvény végrehajtása befejeződik.
+                Az egyéb objektumoknak a heap-ben, vagy a memória éppen nem használt közös részén lehet helyet foglalni. Ezek a részek automatikusan nem tudnak felszabadulni, ezért kezdeményezni kell megszűnésüket, ha már nincs szükség rájuk. 
+                A szükséges memória lefoglalása főleg az összetett adatstruktúrák esetén fontos tényező. Egy változó mutathat egy dinamikusan létrehozott adatstruktúrára, ilyen esetben az adatszerkezet részeire nem közvetlenül a változóval tudunk hivatkozni, a változó mutat a létrejött struktúrára. Ez biztosítja a GC-s nyelvek hulladékgyűjtési módszerének működését, hiszen amikor egy adatszerkezetre nincs már egyetlen mutató sem, akkor az felszabadítható.
+                
+               
+                
+                </p>
+        </div>
+    </section>
+
+
+    <section class="types section scroll">
+        <div class="infobox">
+            <caption>Típusok a C# nyelvben</caption>
+            <div class="limiter">
+                <div class="wrap-table100">
+                    <div class="table100">
+                        <table>
+                            <thead>
+                                <tr class="table100-head">
+                                    <th class="column1">Név</th>
+                                    <th class="column2">.NET osztály</th>
+                                    <th class="column3">Leírás</th>
+                                    <th class="column4">Szélesség</th>
+                                    <th class="column5">Memóriabeli méret (btye)</th>
+                                    <th class="column6">Tartomány</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="column1">byte</td>
+                                    <td class="column2">Byte</td>
+                                    <td class="column3"></td>
+                                    <td class="column4 c">8</td>
+                                    <td class="column5 c">1</td>
+                                    <td class="column6">0 – 255</td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">sbyte</td>
+                                    <td class="column2">SByte</td>
+                                    <td class="column3"></td>
+                                    <td class="column4 c">8</td>
+                                    <td class="column5 c">1</td>
+                                    <td class="column6">-128 – 127</td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">int</td>
+                                    <td class="column2">Int32</td>
+                                    <td class="column3">Egész számok</td>
+                                    <td class="column4 c">32</td>
+                                    <td class="column5 c">4</td>
+                                    <td class="column6">-2147483647 – 2147483647</td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">uint</td>
+                                    <td class="column2">UInt32</td>
+                                    <td class="column3"></td>
+                                    <td class="column4 c">32</td>
+                                    <td class="column5 c">4</td>
+                                    <td class="column6">0 – 4294967295</td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">short</td>
+                                    <td class="column2">Int16</td>
+                                    <td class="column3">Egész számok (rövid tartomány)</td>
+                                    <td class="column4 c ">16</td>
+                                    <td class="column5 c">2</td>
+                                    <td class="column6">-32768 – 32767</td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">ushort</td>
+                                    <td class="column2">UInt16</td>
+                                    <td class="column3"></td>
+                                    <td class="column4 c">16</td>
+                                    <td class="column5 c ">2</td>
+                                    <td class="column6">0 – 65535</td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">long</td>
+                                    <td class="column2">Int64</td>
+                                    <td class="column3">Egész számok (nagy tartomány)</td>
+                                    <td class="column4 c ">64</td>
+                                    <td class="column5 c">8</td>
+                                    <td class="column6">-9223372036854775808 – 9223372036854775807</td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">ulong</td>
+                                    <td class="column2">UInt64</td>
+                                    <td class="column3"></td>
+                                    <td class="column4 c">64</td>
+                                    <td class="column5 c">8</td>
+                                    <td class="column6">0 – 18446744073709551615 </td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">float</td>
+                                    <td class="column2">Single</td>
+                                    <td class="column3">Lebegőpontos számok</td>
+                                    <td class="column4 c">32</td>
+                                    <td class="column5 c">4</td>
+                                    <td class="column6">-3,402823e38 – 3,402823e38 </td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">double</td>
+                                    <td class="column2">Double</td>
+                                    <td class="column3">Kétszeres pontosságú lebegőpontos számok</td>
+                                    <td class="column4 c">64</td>
+                                    <td class="column5 c">8</td>
+                                    <td class="column6">-1,79769313486232e308 – 1,79769313486232e308</td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">char</td>
+                                    <td class="column2">Char</td>
+                                    <td class="column3">Egy darab karakter</td>
+                                    <td class="column4 c">16</td>
+                                    <td class="column5 c">2</td>
+                                    <td class="column6">Unicode Symbols</td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">string</td>
+                                    <td class="column2">String</td>
+                                    <td class="column3">Karakterlánc</td>
+                                    <td class="column4 c"></td>
+                                    <td class="column5 c">2/char</td>
+                                    <td class="column6"></td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">decimal</td>
+                                    <td class="column2">Decimal</td>
+                                    <td class="column3">Pillanatnyi érték</td>
+                                    <td class="column4 c">128</td>
+                                    <td class="column5 c">16</td>
+                                    <td class="column6"> ±1,0×10e-28 – ±7,9×10e28 </td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">bool</td>
+                                    <td class="column2">Boolean</td>
+                                    <td class="column3">Logikai érték</td>
+                                    <td class="column4 c">8</td>
+                                    <td class="column5 c">1</td>
+                                    <td class="column6">True | False</td>
+                                </tr>
+                                <tr>
+                                    <td class="column1">object</td>
+                                    <td class="column2">Object</td>
+                                    <td class="column3"></td>
+                                    <td class="column4 c"></td>
+                                    <td class="column5 c"></td>
+                                    <td class="column6"></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
     </div>
+    
     
     
 </body>
