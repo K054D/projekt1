@@ -121,6 +121,7 @@ nav {
     width: calc(100vw - 10px);
     z-index: 10;
     height: 5vh;
+    white-space: nowrap;
 }
 
 
@@ -195,58 +196,16 @@ nav {
     padding: 1% 10%;
 }
 
-.infobox a{
-    margin:0;
-    transition:all .4s;
-    -webkit-transition:all .4s;
-    -o-transition:all .4s;
-    -moz-transition:all .4s
-}
 
-.infobox a:focus{
-    outline:none!important
-}
 
-.infobox a:hover{
-    text-decoration:none
-}
 
-.infobox h1,h2,h3,h4,h5,h6{
-    margin:0
-}
 
-.infobox p{
-    margin:0
-}
 
-.infobox ul,li{
-    margin:0;
-    list-style-type:none
-}
 
-.infobox input{
-    display:block;
-    outline:none;
-    border:none!important
-}
 
-.infobox textarea{
-    display:block;
-    outline:none
-}
 
-.infobox textarea:focus,input:focus{
-    border-color:transparent!important
-}
 
-.infobox button{
-    outline:none!important;
-    border:none;
-    background:0 0}
 
-.infobox button:hover{
-    cursor:pointer
-}
 
 iframe{
     border:none!important
@@ -387,8 +346,11 @@ iframe{
     
     .infobox table tbody tr td{
         padding-left:50%!important;
-        margin-bottom:24px
+        margin-bottom:24px;
+        
     }
+
+    
     
     .infobox table tbody tr td:last-child{
         margin-bottom:0
@@ -434,8 +396,9 @@ iframe{
     }
     
     .column4,.column5,.column6,.column1,.column2,.column3{
-        width:100%;
-        text-align:left
+        width:25%;
+        text-align:left;
+        
     }
     
     .infobox tbody tr{
