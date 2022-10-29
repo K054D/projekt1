@@ -295,24 +295,20 @@ iframe{
     width:3rem;
     padding-left:40px}
 
-.column2{
+.column2,.column3{
     width:3rem
 }
 
- .column3{
-    width:3rem
-}
+ 
 
- .column4{
+ .column4, .column5{
     width:3rem;
-   
+   text-align: center;
 }
 
- .column5{
-    width:3rem;
-    
+td.column4, td.column5 {
+    text-align: center !important;
 }
-
  .column6{
     width:3rem;
     padding-left:62px
@@ -322,6 +318,12 @@ iframe{
 
 @media screen and (max-width:992px)
 {
+    
+    
+    td.column4, td.column5 {
+        text-align: left !important;
+    }
+
     .infobox table{
         display:block;
     }
