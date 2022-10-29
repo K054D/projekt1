@@ -87,17 +87,33 @@ body {
     color: grey;
     height: 100vh;
     text-align: justify;
-    
 }
 .section p{
     font-size: 2vh;
 
 }
 
+.sectionV p {
+    font-size: 2vh;
+}
+
 .scroll{
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
+
+.sublink {
+    margin-top: 10vh;
+    width: 33%;
+    height: 100vh;
+    box-sizing: border-box;
+    border: 1px solid white;
+    display: inline-block;
+}
+.sublink * {
+    padding-left: 1rem;
+}
+
 
 .c_example{
     background-color: rgb(173, 173, 173);
@@ -225,7 +241,8 @@ iframe{
 
 .limiter{
     width:100%;
-    margin:0 auto}
+    margin:0 auto
+}
 
  
 
@@ -269,17 +286,7 @@ iframe{
     text-align:left
 }
 
-.infobox table td.l,table th.l{
-    text-align:right
-}
 
-.infobox table td.c,table th.c{
-    text-align:center
-}
-
-.infobox table td.r,table th.r{
-    text-align:center
-}
 
  .table100-head th{
     font-size:18px;
@@ -301,7 +308,7 @@ iframe{
 
 .infobox tbody tr:hover{
     color:#555;
-    background-color:#f5f5f5;
+    background-color:#f0f0f0;
 }
 
 .column1{
@@ -426,46 +433,6 @@ td.column4, td.column5 {
     .container-table100{padding-left:15px;padding-right:15px}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 1340px) {
