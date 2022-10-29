@@ -17,3 +17,8 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+function copyClipboard(){
+    var Text = document.getElementById("codesnippet-a")
+    navigator.clipboard.writeText(Text.ariaValueText);
+}

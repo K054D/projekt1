@@ -39,52 +39,42 @@
     </section> 
 
     <section class="sectionV content-varrarr ">
-        <div class="content">
-            <p>Változók és tömbök
-                A program által mozgatott, módosított elemek
+        <div class="content-var">
+            
+                <h2>Változók:</h2> 
+                <p>A változó egy olyan szimbolikus névvel ellátott absztrakt tárolóegység, amely ismert vagy ismeretlen mennyiségű információt tartalmaz, melyekre értékként tekintünk.</p>
+                <p>A programozási nyelvekben a változó úgy képzelhető el, mint egy hely, ami alkalmas egy érték tárolására a számítógép memóriájában. A változók alkalmazása a matematikában megszokotthoz hasonló kényelmes lehetőségeket biztosít.</p>
+                <p>A változó nevet kap, aminek segítségével a későbbiekben a változóban lévő objektumra hivatkozni lehet. Ez úgy működik, miként az emberek neve, amivel mások megszólíthatják. </p>
+                <p>Jellemzően a változó neve a memória néhány bájtjának címét jelenti, így a változóra vonatkozó művelet e memória rész tartalmát használja, vagy módosítja. Ez a név szerinti kötés. Ha nagy adatterület szükséges, vagy pillanatnyilag (a program készítésekor) nem ismert a mérete, akkor a változóban nem közvetlenül az adatot tároljuk, hanem csak a memória érintett részére mutató hivatkozást.</p>
+                <p>A változók két fontos tulajdonságát külön ki kell emelni: az életciklust, és az érvényességi kört. A memória gazdaságossága érdekében a változónak az első használat előtt helyet kell biztosítani, a használat befejezésekor pedig fel kell szabadítani a területét. Az érvényességi kör segít meghatározni a változó életciklusát. A változó rendszerint a program kód valamelyik érvényességi körében van, tehát a változó a programrész aktiválódásakor keletkezik, majd megszűnik, amikor a programrész véget ér. 
+                    Míg egy egyszerű változó egyetlen egészet, vagy szöveget tartalmaz, addig léteznek programnyelvek, amik megengedik az érték mellett az adat típusának tárolását is. Ezek a nyelvek paraméter szerinti többalakú függvények írását is lehetővé teszik. Ezek a változók az egyszerűekhez hasonlóan működnek, de a típusukat is hordozzák. </p>
                 
+                <p>A változók kétfélék lehetnek, van, amelyik új értéket is felvehet, és van, amelyik nem. <a href="#" id="codesnippet-a" aria-valuetext='string name = "Jhon";' onclick=copyClipboard()><img src="codesnippet-strvar.png" alt="stringvar" class="codesnippet"></a></p>
                 
+                <h3>Változónév</h3>
+                <p>A változók olyan nevet kaphatnak, amit a programozási nyelv szintaktikája megenged, ajánlatos a megállapodásokat betartani, de ezeken túl egyéni ízlés kérdése.</p>
+                <p>A C és a hozzá hasonló programozási nyelvekben a változók neve állhat betűkből, számokból, és tartalmazhatja az aláhúzás jelet, de mindenképpen betűvel kell kezdődnie. </p>
+                <p>Egyes programnyelvekben a változó neve meghatározza a benne tárolható adat típusát. </p>
                 
+                <h3>Érvényességi kör, hatókör</h3>
+                <p>Érvényességi kör és hatókör megadja, hogy a változót a programszöveg mely részén használhatjuk, és a végrehajtás közben milyen körben rendelkezik majd értékkel.</p>
+                <p>A legtöbb programozási nyelvben a változók többféle érvényességi körrel is rendelkezhetnek. A változó érvényességi köre a programkód azon része, ahol a változó nevének jelentése van (használható, ismert). 
+                A globális változóra vagy egy korlátlan érvényességi körű változóra a program bármely részéből lehet hivatkozni. </p>
+                <p>A változóra az érvényességi körén kívülről hivatkozni hibás és értelmetlen. </p>
                 
-                
-                
-                
-                
-                
-                Változók:
-                A változó egy olyan szimbolikus névvel ellátott absztrakt tárolóegység, amely ismert vagy ismeretlen mennyiségű információt tartalmaz, melyekre értékként tekintünk.
-                A programozási nyelvekben a változó úgy képzelhető el, mint egy hely, ami alkalmas egy érték tárolására a számítógép memóriájában. A változók alkalmazása a matematikában megszokotthoz hasonló kényelmes lehetőségeket biztosít.
-                A változó nevet kap, aminek segítségével a későbbiekben a változóban lévő objektumra hivatkozni lehet. Ez úgy működik, miként az emberek neve, amivel mások megszólíthatják. 
-                 Jellemzően a változó neve a memória néhány bájtjának címét jelenti, így a változóra vonatkozó művelet e memória rész tartalmát használja, vagy módosítja. Ez a név szerinti kötés. Ha nagy adatterület szükséges, vagy pillanatnyilag (a program készítésekor) nem ismert a mérete, akkor a változóban nem közvetlenül az adatot tároljuk, hanem csak a memória érintett részére mutató hivatkozást.
-                
-                A változók két fontos tulajdonságát külön ki kell emelni: az életciklust, és az érvényességi kört. A memória gazdaságossága érdekében a változónak az első használat előtt helyet kell biztosítani, a használat befejezésekor pedig fel kell szabadítani a területét. Az érvényességi kör segít meghatározni a változó életciklusát. A változó rendszerint a program kód valamelyik érvényességi körében van, tehát a változó a programrész aktiválódásakor keletkezik, majd megszűnik, amikor a programrész véget ér. 
-                Míg egy egyszerű változó egyetlen egészet, vagy szöveget tartalmaz, addig léteznek programnyelvek, amik megengedik az érték mellett az adat típusának tárolását is. Ezek a nyelvek paraméter szerinti többalakú függvények írását is lehetővé teszik. Ezek a változók az egyszerűekhez hasonlóan működnek, de a típusukat is hordozzák. 
-                A változók kétfélék lehetnek, van, amelyik új értéket is felvehet, és van, amelyik nem. 
-                Változónév
-                A változók olyan nevet kaphatnak, amit a programozási nyelv szintaktikája megenged, ajánlatos a megállapodásokat betartani, de ezeken túl egyéni ízlés kérdése. 
-                A C és a hozzá hasonló programozási nyelvekben a változók neve állhat betűkből, számokból, és tartalmazhatja az aláhúzás jelet, de mindenképpen betűvel kell kezdődnie. 
-                Egyes programnyelvekben a változó neve meghatározza a benne tárolható adat típusát. 
-                Érvényességi kör, hatókör
-                Érvényességi kör és hatókör megadja, hogy a változót a programszöveg mely részén használhatjuk, és a végrehajtás közben milyen körben rendelkezik majd értékkel.
-                A legtöbb programozási nyelvben a változók többféle érvényességi körrel is rendelkezhetnek. A változó érvényességi köre a programkód azon része, ahol a változó nevének jelentése van (használható, ismert). 
-                A globális változóra vagy egy korlátlan érvényességi körű változóra a program bármely részéből lehet hivatkozni. 
-                A változóra az érvényességi körén kívülről hivatkozni hibás és értelmetlen. 
-                Memóriabeli helyfoglalás
-                A létrehozott változó értékkel rendelkezik, ami valahol a számítógép memóriájában helyezkedik el. A program a memóriában helyezi el az adatobjektumokat, majd az újrafelhasználhatóság miatt az objektumok törlődnek, ha már nincs szükség a bennük tárolt értékre.
-                A memóriaváltozók kezelése nagymértékben függ a nyelvi környezettől. Néhány nyelvi megvalósítás könnyen felismeri azokat a változókat, amikre már nincs szükség a függvény befejeződése után. A lokális változók területe a végrehajtási verem részét képezi, ami automatikusan felszabadul, amikor a függvény végrehajtása befejeződik.
-                Az egyéb objektumoknak a heap-ben, vagy a memória éppen nem használt közös részén lehet helyet foglalni. Ezek a részek automatikusan nem tudnak felszabadulni, ezért kezdeményezni kell megszűnésüket, ha már nincs szükség rájuk. 
-                A szükséges memória lefoglalása főleg az összetett adatstruktúrák esetén fontos tényező. Egy változó mutathat egy dinamikusan létrehozott adatstruktúrára, ilyen esetben az adatszerkezet részeire nem közvetlenül a változóval tudunk hivatkozni, a változó mutat a létrejött struktúrára. Ez biztosítja a GC-s nyelvek hulladékgyűjtési módszerének működését, hiszen amikor egy adatszerkezetre nincs már egyetlen mutató sem, akkor az felszabadítható.
-                
+                <h3>Memóriabeli helyfoglalás</h3>
+                <p>A létrehozott változó értékkel rendelkezik, ami valahol a számítógép memóriájában helyezkedik el. A program a memóriában helyezi el az adatobjektumokat, majd az újrafelhasználhatóság miatt az objektumok törlődnek, ha már nincs szükség a bennük tárolt értékre.</p>
+                <p>A memóriaváltozók kezelése nagymértékben függ a nyelvi környezettől. Néhány nyelvi megvalósítás könnyen felismeri azokat a változókat, amikre már nincs szükség a függvény befejeződése után. A lokális változók területe a végrehajtási verem részét képezi, ami automatikusan felszabadul, amikor a függvény végrehajtása befejeződik.</p>
+                <p>Az egyéb objektumoknak a heap-ben, vagy a memória éppen nem használt közös részén lehet helyet foglalni. Ezek a részek automatikusan nem tudnak felszabadulni, ezért kezdeményezni kell megszűnésüket, ha már nincs szükség rájuk. </p>
+                <p>A szükséges memória lefoglalása főleg az összetett adatstruktúrák esetén fontos tényező. Egy változó mutathat egy dinamikusan létrehozott adatstruktúrára, ilyen esetben az adatszerkezet részeire nem közvetlenül a változóval tudunk hivatkozni, a változó mutat a létrejött struktúrára. Ez biztosítja a GC-s nyelvek hulladékgyűjtési módszerének működését, hiszen amikor egy adatszerkezetre nincs már egyetlen mutató sem, akkor az felszabadítható.</p>
                
-                
-                </p>
         </div>
     </section>
 
 
     <section class="sectionV types">
-        <div class="infobox content">
-            <caption>Típusok a C# nyelvben</caption>
+        <div class="infobox content-var">
+            <caption><h2>Típusok a C# nyelvben</h2></caption>
             <div class="limiter">
                 <div class="wrap-table100">
                     <div class="table100">
@@ -111,7 +101,7 @@
                                 <tr>
                                     <td class="column1">sbyte</td>
                                     <td class="column2">SByte</td>
-                                    <td class="column3">x</td>
+                                    <td class="column3"></td>
                                     <td class="column4">8</td>
                                     <td class="column5">1</td>
                                     <td class="column6">-128 – 127</td>
@@ -127,7 +117,7 @@
                                 <tr>
                                     <td class="column1">uint</td>
                                     <td class="column2">UInt32</td>
-                                    <td class="column3"></td>
+                                    <td class="column3">Előjel nélküli egészek</td>
                                     <td class="column4">32</td>
                                     <td class="column5">4</td>
                                     <td class="column6">0 – 4294967295</td>
@@ -135,7 +125,7 @@
                                 <tr>
                                     <td class="column1">short</td>
                                     <td class="column2">Int16</td>
-                                    <td class="column3">Egész számok (rövid tartomány)</td>
+                                    <td class="column3">Egész számok (kis tartomány)</td>
                                     <td class="column4">16</td>
                                     <td class="column5">2</td>
                                     <td class="column6">-32768 – 32767</td>
@@ -143,7 +133,7 @@
                                 <tr>
                                     <td class="column1">ushort</td>
                                     <td class="column2">UInt16</td>
-                                    <td class="column3"></td>
+                                    <td class="column3">Előjel nélküli egészek (kis tartomány)</td>
                                     <td class="column4">16</td>
                                     <td class="column5">2</td>
                                     <td class="column6">0 – 65535</td>
@@ -159,7 +149,7 @@
                                 <tr>
                                     <td class="column1">ulong</td>
                                     <td class="column2">UInt64</td>
-                                    <td class="column3"></td>
+                                    <td class="column3">Előjel nélküli egészek (nagy tartomány)</td>
                                     <td class="column4">64</td>
                                     <td class="column5">8</td>
                                     <td class="column6">0 – 18446744073709551615 </td>
@@ -230,6 +220,13 @@
 
         </div>
 
+    </section>
+
+    <section class="sectionV content-varrarr">
+        <div class="content-var">
+            <h2>Tömbök</h2>
+            <p>Nagy mennyiségű, logikailag összefüggő adatok tárolására összetett adatstruktúrákat alkalmazunk.</p>
+        </div>
     </section>
 
     </div>
