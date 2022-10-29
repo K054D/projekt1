@@ -186,7 +186,12 @@ nav {
     border-radius: 25px;
     transition: .1s;
     box-shadow: 2px 3px 8px rgba(0,0,0,.5);
+    display: inline-flex;
+    background-color: #1c1c1c;
 }
+
+
+
 .sectionV {
     position: relative;
     background: #111111;
