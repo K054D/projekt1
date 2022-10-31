@@ -522,6 +522,15 @@ td.column4, td.column5 {
     .section{
         height: max-content;
     }
+    .example{
+        font-size: 1.5vw;
+    }
+    .nagycim{
+        font-size: 3vw;
+    }
+    .alcim{
+        font-size: 2vw;
+    }
     
 }
 
@@ -536,7 +545,15 @@ td.column4, td.column5 {
         width: 5px;
         z-index: 11;
       }
-    
+    .example{
+        font-size: 2vw;
+    }
+    .alcim{
+        font-size: 2.5vw;
+    }
+    .nagycim{
+        font-size: 3.5vw;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -544,6 +561,15 @@ td.column4, td.column5 {
         font-size: 2.8vw;
         padding-left: 2%;
         width: 98%;
+    }
+    .example{
+        font-size: 2.5vw;
+    }
+    .alcim{
+        font-size: 4vw;
+    }
+    .nagycim{
+        font-size: 5vw;
     }
 }
 
