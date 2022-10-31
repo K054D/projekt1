@@ -41,18 +41,21 @@
 
     <section class="section scroll">
         <br>
-        <h2>Szelekció (elágazás)</h2>
-        <h3>Elágazás utasításblokkal</h3>    
+        <h2 class="nagycim">Szekvencia</h2>
+        <p>A szekvencia egyszerű tevékenységek, utasítások sorozata, a program utasításait sorban, esgymás után hajtjuk végre. A legegyszerűbb vezérlési szerkezet</p>
+        <h2 class="nagycim">Szelekció (elágazás)</h2>
+        <h3 class="alcim">Elágazás utasításblokkal</h3>    
         <p>
                     Amennyiben a paraméterként megadott kifejezés igaz, akkor a megadott 
-                    utasítások végrehajtódnak. Megadási formátuma a következő:
+                    utasítások végrehajtódnak. Egyetlen utasításnál nem kötelezőek a blokk zárójelek. Megadási formátuma a következő:
         </p>
         <pre class="example">
 if (feltétel)
 {
     utasítás1;
     utasítás2;
-}</pre>
+} vagy
+if (feltétel) utasítás;</pre>
         <h3>C# példa</h3>
         <pre class="c_example">
 int a = 6; 
@@ -61,31 +64,25 @@ if (a>b) {
 Console.Write("Az a nagyobb: "); 
 Console.WriteLine(a); 
 }</pre>        
-        <p>Egyetlen utasításnál nem kötelezőek a blokk zárójelek:</p>
+
         <pre  class="c_example">
-if (feltétel) utasítás;
 int a = 6; 
 int b = 5; 
 if (a>b)  Console.Write("Az a nagyobb: ");</pre>
-            
     </section>
+
     
     <section  class="section  scroll">
         <br>
-            <h3>Elágazás else ággal</h3>
+            <h3  class="alcim">Elágazás else ággal</h3>
             <p>Az if szerkezet kibővíthető egy else (különben) ággal. Az else ágba a 
                 vezérlés akkor fog kerülni, ha az if feltétele hamis. Megadási formája:
             </p>
-            <pre>
+            <pre class="example">
 if (feltétel) utasítás;
 else utasítás;</pre>
             <h3>C# példa</h3>
-            <pre   class="c_example">
-int a = 6; 
-int b = 5; 
-if (a>b) Console.WriteLine("Az a nagyobb: "+a); 
-else Console.WriteLine("Az a nem nagyobb: "+a);</pre>
-            <pre class="c_example">
+           <pre class="c_example">
 if (a>b) { 
     Console.Write("Az a nagyobb: "); 
     Console.WriteLine(a); 
@@ -94,15 +91,35 @@ else {
     Console.Write("A b nagyobb vagy egyenlő:"); 
     Console.WriteLine(b); 
 }</pre>
-
-            
+<pre class="c_example">
+int a = Int32.Parse(Console.ReadLine());
+if (a % 2 == 0)
+{
+    Console.WritLine(„A szám páros!”);
+}
+else
+{
+    Console.WriteLine(„A szám páratlan!”);
+}</pre>
+<pre class="c_example">
+int a = Int32.Parse(Console.ReadLine());
+int b = Int32.Parse(Console.ReadLine());
+if (a % b == 0)
+{
+Console.WriteLine(„A 2. szám osztója az 1.-nek!”);
+}
+else
+{
+Console.WriteLine(„A 2. szám nem osztója az 1.-nek!”);
+}</pre>
     </section>
+
     
     <section class="section scroll">
         <br>
-            <h3>Egymásba ágyazott elágazások</h3>
+            <h3  class="alcim">Egymásba ágyazott elágazások</h3>
             <p>Több if utasítás is egymásba ágyazható else ágak segítségéhez. Ezt hívjuk else if szerkezetnek:</p>
-            <pre>
+            <pre class="example">
 if (feltétel) utasítás;
 else if (másik_feltétel) utasítás;
 else utasítás;</pre>
@@ -121,35 +138,50 @@ else if (a>b) {
 else { 
     Console.Write("b nagyobb:"); 
     Console.WriteLine(b); }</pre>
+
+<pre class="c_example">
+int eletkor = Int32.Parse(Console.ReadLine());
+if (0 &lt; eletkor &lt;= 14){
+    Console.WriteLine(„Gyerek”); }
+else if (14 &lt; eletkor &lt;= 18){
+    Console.WriteLine(„Kamasz”); }
+else if (18 &lt; eletkor &lt;= 64){
+    Console.WriteLine(„Felnőtt”); }
+else if (64 &lt; eletkor){
+    Console.WriteLine(„Idős”); }</pre>
+
+    <pre class="c_example">
+int átlag = Int32.Parse(Console.ReadLine());
+if (átlag == 5){
+    Console.WriteLine(„Kitűnő”); }
+else if (átlag &lt; 2){
+    Console.WriteLine(„Bukott”); }
+else {
+Console.WriteLine(„Nem szélső érték”); }</pre>
     </section>
     
     <section class="section scroll">
         <br>
-            <h3>Többirányú elágazás</h3>
+            <h3  class="alcim">Többirányú elágazás</h3>
             <p>Ezen szerkezet akkor hasznos, ha egy változó konstans, előre tudott 
                 értékeire szeretnénk reagálni megadott módon. Például, ha tudjuk, 
                 hogy egy változó értéke 1, 2 vagy 3 lehet és nem egy 200 és 30000 
-                közötti szám.
-                <br>
-                    Ezen esetben sokkal átláthatóbb és némileg gyorsabb futást eredményez a 
-                    programunkban a switch-case vezérlési szerkezet alkalmazása. Ezen felül 
-                    tisztább kódot produkál, mint rengeteg if-else ág. Megadási formája:</p>
-            <pre>
+                közötti szám. Ezen felül tisztább kódot produkál, mint rengeteg if-else ág.
+                A case szerkezetek végén lévő break utasítás azért kell, mert ha nem lenne ott, 
+                akkor a vezérlés folytatódna a következő case ágban is. 
+                A default ágba a vezérlés akkor kerül, ha a fentebb megadott egyik case vezérlési 
+                eset sem teljesül. Megadása nem kötelező. Vezérléshez egész szám típusú változókat, 
+                karaktereket, szövegeket használhatunk fel, valamint felsorolást is. Megadási formája:
+                </p>
+            <pre class="example">
 switch ( változó ){
 case konstans kifejezés: utasítás; break;
 default: utasítás; break;
 }</pre>
             
-            <p>A case szerkezetek végén lévő break utasítás azért kell, mert ha nem lenne ott, 
-                akkor a vezérlés folytatódna a következő case ágban is. Hiányáért általában 
-                panaszkodik a fordítóprogram. 
-                <br>
-                A default ágba a vezérlés akkor kerül, ha a fentebb megadott egyik case vezérlési 
-                eset sem teljesül. Megadása nem kötelező. Vezérléshez egész szám típusú változókat, 
-                karaktereket, szövegeket használhatunk fel, valamint felsorolást is. 
-                    </p>
-                <h3>C# példa</h3>
-                <pre class="c_example ">
+            
+            <h3>C# példa</h3>
+            <pre class="c_example ">
 int szam = 3; 
 switch(szam) { 
 case 1 : Console.WriteLine("Egy"); break; 
@@ -157,10 +189,42 @@ case 2 : Console.WriteLine("Kettő"); break;
 case 3 : Console.WriteLine("Három"); break; 
 default : Console.WriteLine("Sok"); break; 
 }</pre>
+    <pre class="c_example">
+Console.WriteLine("A: Kis kávé, B: Nagy kávé");
+Console.WriteLine("C: Nem iszom semmit");
+Console.Write("Kérem válasszon!: ");
+char gomb = Char.Parse(Console.ReadLine());
+switch (gomb) {
+case 'A': case 'a':
+Console.WriteLine("Kis kávét választott"); break;
+case 'B': case 'b':
+Console.WriteLine("Nagy kávét választott"); break;
+case 'C': case 'c':
+Console.WriteLine("Kár"); break;
+default:
+Console.WriteLine("Nem jó gombot nyomott!"); break;
+}</pre>
+<pre class="c_example">
+string jogositvany = Console.ReadLine();
+switch (jogositvany) {
+case "A": case "a": case "A1":
+case "a1": case "A2": case "a2":
+Console.WriteLine("Motor"); break;
+case "B": case "b":
+Console.WriteLine("Személygépjármű"); break;
+case "C": case "c":
+Console.WriteLine("Teherautó"); break;
+case "D": case "d":
+Console.WriteLine("Busz"); break;
+default:
+Console.WriteLine("Nem található!"); break;
+}</pre>
     </section>
+
+
     <section class="section scroll">
         <br>
-        <h2>Iteráció</h2>
+        <h2 class="nagycim">Iteráció</h2>
         <p>Utasítássorozatot ismétlő programszerkezet.
                 A  ciklus  részei:
             <br>  
@@ -168,11 +232,11 @@ default : Console.WriteLine("Sok"); break;
             <br>  
                 ciklusmag: az a szekvencia, amelyet a program ismételten végrehajt.
             </p>
-        <h3>Elöltesztelős ciklus</h3>
+        <h3 class="alcim">Elöltesztelős ciklus</h3>
         <p>Az elöltesztelős ciklus először megvizsgálja, hogy a feltétel teljesül-e. 
             Ha igen, akkor végrehajtja a ciklusmagot, majd a folyamat az újból kezdődik. 
             Ha nem, akkor a program a ciklus utáni ponton folytatódik tovább, azaz a ciklusmag kimarad.</p>
-        <pre>
+        <pre class="example">
 while ( feltétel )
 {
       //ciklusmag
@@ -184,16 +248,34 @@ while (i&lt10){
     Console.WriteLine(i);
     i++;}</pre>
 
+    <pre class="c_example">
+int i = 1;
+int összeg = 0;
+while (összeg &lt; 20)
+{
+összeg += i;
+i++;
+}</pre>
 
+<pre class="c_example">
+int a = Int32.Parse(Console.ReadLine());
+int i = 2;
+while (a % i !=  0)
+{
+    i++;
+}
+Console.WriteLine(„A szám legkisebb osztója {0}”, i);</pre>
     </section>
+
+
     <section class="section scroll">
         <br>
-        <h3>Hátultesztelős ciklus</h3>
+        <h3 class="alcim">Hátultesztelős ciklus</h3>
         <p>A hátultesztelős ciklus először végrehajtja a ciklusmagot utána megvizsgálja, 
             hogy a feltétel teljesül-e. A hátultesztelős ciklus ciklusmagja egyszer 
             mindenképpen végrehajtásra kerül. 
         </p>
-        <pre>
+        <pre class="example">
 do
 {
   //ciklusmag
@@ -206,16 +288,16 @@ do {
 Console.WriteLine(i); 
 i++; 
 } while (i&lt10);</pre>
-
-        
     </section>
+
+
     <section class="section scroll">
         <br>
-        <h3>Növekményes ciklus</h3>
+        <h3 class="alcim">Növekményes ciklus</h3>
         <p>Az ismétlések száma előre ismert. A ciklus a ciklusváltozó előre megadott 
             értékétől, előre megadott értékig fut. A ciklusváltozó egész típusú. Ha a ciklusváltozó nem 
             egyesével növekszik, akkor megadjuk a számlálás irányát és lépésközét is.</p>
-        <pre>
+        <pre class="example">
 for (utasítás1; feltétel; utasítás2) { 
     // Ciklusmag
      ...
@@ -242,13 +324,13 @@ for (int i = 9; i &gt= 0; i--){
     </section>
     <section class="section scroll">
         <br>
-        <h3>Bejáró ciklus</h3>
-        <p>aA foreach ciklus egy speciális ciklus, amelyet direkt listák, 
+        <h3 class="alcim">Bejáró ciklus</h3>
+        <p>A foreach ciklus egy speciális ciklus, amelyet direkt listák, 
             tömbök és minden olyan osztály elemeinek bejárására találtak ki. 
             A ciklus annyiszor fog lefutni, ahány elemű a lista.
         </p>
         <p>A valtozo nevű ciklusváltozó pedig minden egyes ciklus futáskor a lista, aktuális elemét tárolja.</p>
-    <pre>
+    <pre class="example">
 foreach (var valtozo in lista)
 {
   //ciklusmag
@@ -260,9 +342,9 @@ foreach (var valtozo in lista)
             </p>
             <h3>C# példa</h3>
             <pre class="c_example">
-int[] tömb = {1,3,5,6,7,9}
-for(int i = 0; i&lttömb.Length; i++){
-    Console.WriteLine(’A tömb {0}. eleme: {1}’, i, tömb[i]);
+int[] t = {1,3,5,6,7,9}
+for(int i = 0; i&lt;t.Length; i++){
+Console.WriteLine("A tömb {0}. eleme: {1}"", i, t[i]);
 }</pre>
     
     </section>

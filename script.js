@@ -18,8 +18,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-function copyClipboard(id){
-    var Text = document.getElementById(id)
+function copyClipboard(){
+    var Text = document.getElementById("codesnippet-a")
     navigator.clipboard.writeText(Text.ariaValueText);
-    
 }
