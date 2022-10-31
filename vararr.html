@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="programming.png" type="image/x-icon">
-    <script src="script.js"></script>
+    
     <title>Változók és Tömbök</title>
 </head>
 <body>
@@ -33,12 +33,12 @@
         </div>
     </nav>
 
-    <h1 class="title vararr">Változók és tömbök</h1>
+    <h1 class="title vararr"><a href="vararr.html#var">Változók</a> és <a href="vararr.html#arr">tömbök</a></h1>
     <p>A program által mozgatott, módosított elemek</p>
 
     </section> 
 
-    <section class="sectionV content-varrarr ">
+    <section class="sectionV content-varrarr" id="var">
         <div class="content-var">
             
                 <h2>Változók:</h2> 
@@ -49,7 +49,7 @@
                 <p>A változók két fontos tulajdonságát külön ki kell emelni: az életciklust, és az érvényességi kört. A memória gazdaságossága érdekében a változónak az első használat előtt helyet kell biztosítani, a használat befejezésekor pedig fel kell szabadítani a területét. Az érvényességi kör segít meghatározni a változó életciklusát. A változó rendszerint a program kód valamelyik érvényességi körében van, tehát a változó a programrész aktiválódásakor keletkezik, majd megszűnik, amikor a programrész véget ér. 
                     Míg egy egyszerű változó egyetlen egészet, vagy szöveget tartalmaz, addig léteznek programnyelvek, amik megengedik az érték mellett az adat típusának tárolását is. Ezek a nyelvek paraméter szerinti többalakú függvények írását is lehetővé teszik. Ezek a változók az egyszerűekhez hasonlóan működnek, de a típusukat is hordozzák. </p>
                 
-                <p>A változók kétfélék lehetnek, van, amelyik új értéket is felvehet, és van, amelyik nem. <a href="#" id="codesnippet-a" class="codesnippet" aria-valuetext='string name = "Jhon";' onclick=copyClipboard()><img src="codesnippet-strvar.png" alt="stringvar" ></a></p>
+                <p>A változók kétfélék lehetnek, van, amelyik új értéket is felvehet, és van, amelyik nem. <a href="#" id="codesnippet-a" class="codesnippet" title="Kattints a másoláshoz" aria-valuetext='string name = "Jhon";' onclick=copyClipboard(id)><img src="codesnippet-strvar.png" alt="stringvar" ></a></p>
                 
                 <h3>Változónév</h3>
                 <p>A változók olyan nevet kaphatnak, amit a programozási nyelv szintaktikája megenged, ajánlatos a megállapodásokat betartani, de ezeken túl egyéni ízlés kérdése.</p>
@@ -222,10 +222,32 @@
 
     </section>
 
-    <section class="sectionV content-varrarr">
+    <section class="sectionV content-varrarr" id="arr">
         <div class="content-var">
             <h2>Tömbök</h2>
             <p>Nagy mennyiségű, logikailag összefüggő adatok tárolására összetett adatstruktúrákat alkalmazunk.</p>
+            <p>Az egyik ilyen a tömb, ami csakis azonos típusú adatokat tud tárolni.</p>
+            <h3>Tömb deklarálása</h3>
+            <p>A  tömb  mindig  referencia  típus  lesz,  ezért  foglalni  kell  neki  memóriaterületet.</p>
+            <p>Ez  a  new operátorral történik, ekkor kell az elemszámot meghatározni. Fontos, hogy a tömbök méretének statikusan, azaz fordítási időben, ki kell derülnie!</p>
+            <p>A tömb menet közben nem méretezhető át.</p>
+            <p>Méretét többféleképp is megadhatjuk.</p>
+            <p>C#: <a href="#" class="codesnippet" id="codesnippet-b" title="Kattints a másoláshoz" aria-valuetext='int[] array = new int[n];' onclick=copyClipboard(id)><img src="codesnippet-newintarr.png" alt="intarray" ></a> vagy <a href="#" class="codesnippet" id="codesnippet-c" title="Kattints a másoláshoz" aria-valuetext='int[] array;
+array = new int[n];' onclick=copyClipboard(id)><img src="codesnippet-newintarr2.png" alt="intarray2" ></a></p>
+            <p>A tömb elemeit megadhatjuk a program készítése közben is, ekkor a kezdőértékeket kapcsos zárójelek között fel kell sorolnunk.</p>
+            <p>C#: <a href="#" class="codesnippet" id="codesnippet-d" title="Kattints a másoláshoz" aria-valuetext='int[] array = new int[5] { 1, 2, 3, 4, 5 };' onclick=copyClipboard(id)><img src="codesnippet-valarr1.png" alt="valuearr" ></a> vagy <a href="#" class="codesnippet" id="codesnippet-e" title="Kattints a másoláshoz" aria-valuetext='int[] array = { 1, 2, 3, 4, 5 };' onclick=copyClipboard(id)><img src="codesnippet-valarr2.png" alt="valuearr2" ></a></p>
+            <p>Megjegyzés: A numerikus tömbelemek alapértelmezett kezdőértékei nullák.</p>
+
+            <h3>A tömb elemeihez való hozzáférés</h3>
+            <p>A tömbök elemeit index segítségével érhetjük el. Szögletes zárójelek között a tömb neve után meg kell adni, hogy hányadik elemet szeretnénk elérni. A tömbök indexelése 0-val kezdődik, azaz egy N elemű tömb első elemének indexe 0, az utolsó elemének pedig N-1. </p>
+            <p>A tömb Length tulajdonsága a tömb elemszámát adja meg.</p>
+            <p>Figyelnünk kell arra, hogy a tömbnek csak azokat az elemeit érjük el, amik léteznek. Ha olyan indexre  hivatkozunk  egy  tömbben,  ami  nem  létezik,  akkor  a  programunk  hibával  leáll.</p>
+            <p>C#:
+                <a href="#" class="codesnippet" id="codesnippet-g" title="Kattints a másoláshoz" aria-valuetext='int[] array = { 1, 2, 3, 4, 5 };
+return array[2];' onclick=copyClipboard(id)><img src="codesnippet-arrindex.png" alt="arrayindex" ></a>
+                 <a href="#" class="codesnippet" id="codesnippet-f" title="Kattints a másoláshoz" aria-valuetext='int[] array = { 1, 2, 3, 4, 5 };
+Console.WriteLine(array[10]);' onclick=copyClipboard(id)><img src="codesnippet-sysioore.png" alt="Sys.outofrangeexeption" ></a>
+</p>
         </div>
     </section>
 
@@ -234,4 +256,5 @@
     
     
 </body>
+<script src="script.js"></script>
 </html>
