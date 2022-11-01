@@ -792,7 +792,9 @@ td.column4, td.column5 {
     .answer label{
         padding: 0.2rem 0.2rem 0.2rem 0.2rem;
     }
-    
+    .header_img{
+        display: none;
+    }
 }
 @media screen and (max-width: 550px){
     .c_example{
