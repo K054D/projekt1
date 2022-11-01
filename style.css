@@ -1,3 +1,4 @@
+* {scroll-behavior: smooth;}
 html {
     margin: 0;
     height: 100%;
@@ -5,7 +6,7 @@ html {
     padding: 0;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
+
 }
 body {
     
@@ -41,6 +42,11 @@ body {
 .vararr {
     font-size: 4vw !important;
 } 
+
+.vararr * {
+    text-decoration: none;
+    color: white;
+}
 
 .header p {
     margin: 0;
@@ -103,15 +109,50 @@ body {
 }
 
 .sublink {
-    margin-top: 10vh;
     width: 33%;
     height: 100vh;
     box-sizing: border-box;
-    border: 1px solid white;
-    display: inline-block;
+    display: inline-flex;
 }
 .sublink * {
-    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.sublink-content {
+    padding: 5rem 3rem;
+    text-align: justify;
+    border-radius: 25px;
+    box-shadow: 0 10px 27px rgba(0,0,0,1);
+    transition: .5s;
+}
+
+.sublink-content:hover {
+    box-shadow: 0 10px 27px rgba(59, 59, 59, 0.4);
+}
+
+.sublink-content a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+
+.sublink-content a::before {
+    content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.sublink-content:hover a::before{
+    transform-origin: left;
+  transform: scaleX(1);
 }
 
 
@@ -207,14 +248,16 @@ nav {
 }
 
 .codesnippet {
-    border: 5px solid #1c1c1c;
-    border-radius: 25px;
-    transition: .1s;
-    box-shadow: 2px 3px 8px rgba(0,0,0,.5);
     display: inline-flex;
-    background-color: #1c1c1c;
 }
 
+.codesnippet img {
+    border: 5px solid #1c1c1c;
+    border-radius: 15px;
+    box-shadow: 2px 3px 8px rgba(0,0,0,.5);
+    transform: translateY(40%);
+    width: 100%;
+}
 
 
 .sectionV {
@@ -264,7 +307,7 @@ iframe{
 
 
 .infobox table{
-    border-spacing: 1px;
+    border-spacing:1;
     border-collapse:collapse;
     background:#fff;
     border-radius:10px;
@@ -354,7 +397,13 @@ td.column4, td.column5 {
 
 @media screen and (max-width:992px)
 {
-    
+    .sublink {
+        width: 100%;
+        display: block;
+    }
+    .sublink-content {
+        padding: 3rem 1rem;
+    }
     
     td.column4, td.column5 {
         text-align: left !important;
