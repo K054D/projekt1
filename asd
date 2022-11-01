@@ -1,4 +1,0 @@
-
-asdasdasdasdasdadasdada
-kosa buzi
-janos 
