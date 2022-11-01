@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="programming.png" type="image/x-icon">
+    <link rel="icon" href="images/programming.png" type="image/x-icon">
     
     <title>Változók és Tömbök</title>
 </head>
@@ -55,14 +55,14 @@
                 <p>A változók olyan nevet kaphatnak, amit a programozási nyelv szintaktikája megenged, ajánlatos a megállapodásokat betartani, de ezeken túl egyéni ízlés kérdése.</p>
                 <p>A C és a hozzá hasonló programozási nyelvekben a változók neve állhat betűkből, számokból, és tartalmazhatja az aláhúzás jelet, de mindenképpen betűvel kell kezdődnie. </p>
                 <p>Egyes programnyelvekben a változó neve meghatározza a benne tárolható adat típusát. </p>
-                <p>Szöveg változó deklarálása C#-ban: <a href="#" id="codesnippet-a" class="codesnippet" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-strvar.png" alt="stringvar" ></a></p>
+                <p>Szöveg változó deklarálása C#-ban: <a href="#" id="codesnippet-a" class="codesnippet" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="images/codesnippet-strvar.png" alt="stringvar" ></a></p>
                 
                 <h3>Érvényességi kör, hatókör</h3>
                 <p>Érvényességi kör és hatókör megadja, hogy a változót a programszöveg mely részén használhatjuk, és a végrehajtás közben milyen körben rendelkezik majd értékkel.</p>
                 <p>A legtöbb programozási nyelvben a változók többféle érvényességi körrel is rendelkezhetnek. A változó érvényességi köre a programkód azon része, ahol a változó nevének jelentése van (használható, ismert). 
                 A globális változóra vagy egy korlátlan érvényességi körű változóra a program bármely részéből lehet hivatkozni. </p>
                 <p>A változóra az érvényességi körén kívülről hivatkozni hibás és értelmetlen. </p>
-                <p><a href="#" id="codesnippet-g" class="codesnippet" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-forloop.png" alt="forloop" ></a></p>
+                <p><a href="#" id="codesnippet-g" class="codesnippet" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="images/codesnippet-forloop.png" alt="forloop" ></a></p>
                 <p>A példában "i" változó csak a ciklus közben létezik, csak itt lehet rá hivatkozni.</p>
                 
                 <h3>Memóriabeli helyfoglalás</h3>
@@ -236,9 +236,9 @@
             <p>Ez  a  new operátorral történik, ekkor kell az elemszámot meghatározni. Fontos, hogy a tömbök méretének statikusan, azaz fordítási időben, ki kell derülnie!</p>
             <p>A tömb menet közben nem méretezhető át.</p>
             <p>Méretét többféleképp is megadhatjuk.</p>
-            <p>C#: <a href="#" class="codesnippet" id="codesnippet-b" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-newintarr.png" alt="intarray" ></a> vagy <a href="#" class="codesnippet" id="codesnippet-c" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-newintarr2.png" alt="intarray2" ></a></p>
+            <p>C#: <a href="#" class="codesnippet" id="codesnippet-b" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="images/codesnippet-newintarr.png" alt="intarray" ></a> vagy <a href="#" class="codesnippet" id="codesnippet-c" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="images/codesnippet-newintarr2.png" alt="intarray2" ></a></p>
             <p>A tömb elemeit megadhatjuk a program készítése közben is, ekkor a kezdőértékeket kapcsos zárójelek között fel kell sorolnunk.</p>
-            <p>C#: <a href="#" class="codesnippet" id="codesnippet-d" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-valarr1.png" alt="valuearr" ></a> vagy <a href="#" class="codesnippet" id="codesnippet-e" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-valarr2.png" alt="valuearr2" ></a></p>
+            <p>C#: <a href="#" class="codesnippet" id="codesnippet-d" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="images/codesnippet-valarr1.png" alt="valuearr" ></a> vagy <a href="#" class="codesnippet" id="codesnippet-e" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="images/codesnippet-valarr2.png" alt="valuearr2" ></a></p>
             <p>Megjegyzés: A numerikus tömbelemek alapértelmezett kezdőértékei nullák.</p>
 
             <h3>A tömb elemeihez való hozzáférés</h3>
@@ -246,9 +246,9 @@
             <p>A tömb Length tulajdonsága a tömb elemszámát adja meg.</p>
             <p>Figyelnünk kell arra, hogy a tömbnek csak azokat az elemeit érjük el, amik léteznek. Ha olyan indexre  hivatkozunk  egy  tömbben,  ami  nem  létezik,  akkor  a  programunk  hibával  leáll.</p>
             <p>C#:
-                <a href="#" class="codesnippet" id="codesnippet-i" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-arrindex.png" alt="arrayindex" ></a>
-                 <a href="#" class="codesnippet" id="codesnippet-f" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-sysioore.png" alt="Sys.outofrangeexeption" ></a>
-<a href="#" class="codesnippet" id="codesnippet-h" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-arraylength.png" alt="Array.Lenght" ></a>
+                <a href="#" class="codesnippet" id="codesnippet-i" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="images/codesnippet-arrindex.png" alt="arrayindex" ></a>
+                 <a href="#" class="codesnippet" id="codesnippet-f" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="images/codesnippet-sysioore.png" alt="Sys.outofrangeexeption" ></a>
+<a href="#" class="codesnippet" id="codesnippet-h" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="images/codesnippet-arraylength.png" alt="Array.Lenght" ></a>
 </p>
 <br>
 <br>
