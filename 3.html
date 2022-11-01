@@ -1,77 +1,84 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Minőségi követelmények</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="programming.png" type="image/x-icon">
+        
+        <title>Minőségi követelmények</title>
+    </head>
 <body>
+    <div class="container">
         <section class="header  ">
-         <nav class="merkur">
- 
- 
-                     
-             <ul class="nav-menu">
-                 <li class="nav-item"><a href="index.html" class="nav-link">Főoldal</a></li>
-                 <li class="nav-item"><a href="vararr.html" class="nav-link">Változók és tömbök</a></li>
-                 <li class="nav-item"><a href="vezerlesi_szerkezetek.html" class="nav-link">Vezérlési szerkezetek</a></li>
-                 <li class="nav-item"><a href="3.html" class="nav-link">Minőségi követelmények</a></li>
-             </ul>
-             
-         
-         <div class="hamburger">
-             <span class="bar"></span>
-             <span class="bar"></span>
-             <span class="bar"></span>
-         </div>
-     </nav>
- 
-     <h1 class="title vararr">Minőségi követelmények</h1>
- 
-     </section> 
- 
-     <section class="sectionV content-varrarr" id="var">
-         <div class="content-var">
-             
-                 <h2>Megbízhatóság: </h2> 
-                 <p>A szoftvernek, a szoftverrendszerhez tartozó programoknak tartósan hibátlanul kell működniük. Nem nehéz megítélni a követelmény erejét, ha a mai személyi számítógépeken futó programok leállásának gyakoriságára gondolunk. A követelmény teljesülésének mércéje lehet például a szoftver egymást követő két leállása között eltelt időtartam.</p>
-                 <h2>Helyesség: </h2>
-                 <p>A szoftver a követelményekben meghatározott feladatokat tökéletesen ellátja, a kijelölt feldolgozásokat, műveleteket hibátlanul elvégzi, pontos adatokat szolgáltat. Hozzá kell tenni, hogy a program helyes működésének bizonyítása nem egyszerű feladat. Még a legszigorúbb, módszeresen megtervezett tesztelés mellett is előfordulhat, hogy az üzembe helyezés után évek múlva derül fény egy addig soha nem észlelt hibára.</p>
-                 <h2>Felhasználóbarátság: </h2>
-                 <p>A szoftver legyen ergonómiai szempontból átgondolt, könnyen kezelhető. Objektív mércével nehezen leírható, de alapvetően fontos, egyre inkább központi kérdésként kezelendő kritérium. Alapvető elvárás, hogy a szoftver legyen informatikai jártasság nélkül megtanulható, kezelhető. A felhasználói felület grafikái segítsék a tájékozódást, a dokumentációk maximálisan támogassák a szoftverrel végzett munkát.</p>
-                 <h2>Hibatűrés: </h2>
-                 <p>A szoftvert fel kell készíteni a környezetében felmerülő lehetséges hibákra. A szoftver nem elszigetelten, önmagában működő rendszer, folyamatosan kapcsolatban áll a külvilággal, más környező rendszerekkel. A fejlesztőknek át kell gondolniuk azokat a váratlan, külső kapcsolatok következményeként bekövetkező eseményeket, amelyek befolyásolhatják a szoftver működését. (Például: nyomtatás közben nem áll le, hanem figyelmeztet a hiba lehetséges okára.)<p>
-                 <h2>Hatékonyság: </h2>
-                 <p>A szoftvert úgy kell elkészíteni, hogy az maximálisan használja ki az adott környezet szoftver és hardver erőforrásait. A tervezés során át kell gondolni a szoftver teljesítményét, működési sebességét befolyásoló maximális terhelések paramétereit, és a szélsőséges helyzetek (például a feldolgozandó adatmennyiség megnövekedése) kezelésére alkalmas takarékos megoldásokra kell törekedni.<p>
-                 <h2>Bővíthetőség, rugalmasság: </h2>
-                 <p>A szoftvernek alkalmasnak kell lennie arra, hogy az informatikai háttér fejlődését követni tudja. (Például: ne kelljen a szoftvert teljesen átírni, ha egy új operációs rendszer verzió jelenik meg.)<p>
-                 <h2>Újrafelhasználhatóság: </h2>
-                 <p>A gazdaságossági szempontok megkövetelik, hogy a szoftvert vagy annak részeit többször, más-más fejlesztésekben újra felhasználhassuk, a moduláris felépítésű szoftver moduljait új rendszerek fejlesztése során beépíthessük.<p>
-                 <h2>Hordozhatóság: </h2>
-                 <p>A fejlesztőknek arra kell törekedniük, hogy a szoftver legyen futtatható többféle szoftver és hardverkörnyezetben. Ez a kritérium természetesen nem teljesíthető végletekig, de el kell érni, hogy a szoftver a lehető legnagyobb mértékben független legyen az hardvereszközöktől és az operációs rendszertől. <p> 
-                 <h2>Együttműködési képesség: </h2>
-                 <p>A szoftvernek nyitottnak kell lennie más rendszerek felé, alapvető elvárás, hogy igény esetén együtt tudjon működni más alkalmazásokkal. Biztosítson lehetőséget például arra, hogy a feldolgozás eredményeként kapott kimeneteket más szoftver által feldolgozható formában exportálja. Ez a kritérium abban az esetben is nagyon fontos, ha a meglévő rendszert új szolgáltatásokkal bővíteni szeretnénk.</p>
-                 
-                 <h1 class="mincim">Jó és hibás program összehasonlítása</h1>
-                 <p>A programokat emberek írják, ezért természetesnek mondható, hogy a kódban sok hiba fordul elő. Ezeket a hibákat többnyire figyelmetlenség okozza, de gyakran előfordul, hogy a programozó hozzá nem értéséből adódnak. Az alábbiakban pár egyszerű példával szeretném szemléltetni a jó és a hibás program közötti különbséget a fentiek alapján. </p>
-                 <p>A <b>felhasználóbarátság</b> szempontjából a legfontosabb, hogy egyértelműen és könnyen kezelhető legyen a program. Ezért egyértelmű jelzésekkel kell ellátni a program egyes részeit.</p>
-                 <p>A példa egy olyan program, ami két számot összead, kivon, összeszoroz és eloszt.</p>
-                 <div class = "kepek">
-                 <img src="elsorossz.png" alt="Rossz" class = "elsorossz">
-                 <img src="elsojo.png" alt="Jó" class="elsojo" >
-                 </div>
-                 <p>Ehhez a példához csatolnám a <b>hibatűrést</b> is, ugyanis itt ügyelnünk kell arra, hogy ha például 0-t kapunk osztónak, akkor ne omoljon össze a program.</p>
-                 <p>A <b>hatékonyság</b> szempontjából fontos, hogy a helyes működést minél kevesebb erőforrás igénybevételével tudjuk elérni. </p>
-                 <p>A példa a prímszámvizsgálat algoritmusának egy hatékony, és egy működő, de kevésbé hatékony változatát mutatja be.</p>
-                 <div class="kepek">
-                 <img src="masodikrossz.png" alt="Rossz" class = "masodikrossz">
-                 <img src="masodikjo.png" alt="Rossz" class = "masodikjo">
-                 </div>
-                 <p>Ez a példa az <b>újrafelhasználhatóságra</b> is tökéletes, ugyanis ezt a programrészt akármikor felhasználhatjuk egy későbbi projektben is.</p>
-        </div>
-     </section>
+            <nav class="merkur">
+    
+    
+                        
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Főoldal</a></li>
+                    <li class="nav-item"><a href="vararr.html" class="nav-link">Változók és tömbök</a></li>
+                    <li class="nav-item"><a href="vezerlesi_szerkezetek.html" class="nav-link">Vezérlési szerkezetek</a></li>
+                    <li class="nav-item"><a href="3.html" class="nav-link">Minőségi követelmények</a></li>
+                </ul>
+                
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    
+        <h1 class="title vararr">Minőségi követelmények</h1>
+    
+        </section> 
+    
+        <section class="sectionV content-varrarr" id="var">
+            <div class="content-var">
+                
+                    <h2>Megbízhatóság: </h2> 
+                    <p>A szoftvernek, a szoftverrendszerhez tartozó programoknak tartósan hibátlanul kell működniük. Nem nehéz megítélni a követelmény erejét, ha a mai személyi számítógépeken futó programok leállásának gyakoriságára gondolunk. A követelmény teljesülésének mércéje lehet például a szoftver egymást követő két leállása között eltelt időtartam.</p>
+                    <h2>Helyesség: </h2>
+                    <p>A szoftver a követelményekben meghatározott feladatokat tökéletesen ellátja, a kijelölt feldolgozásokat, műveleteket hibátlanul elvégzi, pontos adatokat szolgáltat. Hozzá kell tenni, hogy a program helyes működésének bizonyítása nem egyszerű feladat. Még a legszigorúbb, módszeresen megtervezett tesztelés mellett is előfordulhat, hogy az üzembe helyezés után évek múlva derül fény egy addig soha nem észlelt hibára.</p>
+                    <h2>Felhasználóbarátság: </h2>
+                    <p>A szoftver legyen ergonómiai szempontból átgondolt, könnyen kezelhető. Objektív mércével nehezen leírható, de alapvetően fontos, egyre inkább központi kérdésként kezelendő kritérium. Alapvető elvárás, hogy a szoftver legyen informatikai jártasság nélkül megtanulható, kezelhető. A felhasználói felület grafikái segítsék a tájékozódást, a dokumentációk maximálisan támogassák a szoftverrel végzett munkát.</p>
+                    <h2>Hibatűrés: </h2>
+                    <p>A szoftvert fel kell készíteni a környezetében felmerülő lehetséges hibákra. A szoftver nem elszigetelten, önmagában működő rendszer, folyamatosan kapcsolatban áll a külvilággal, más környező rendszerekkel. A fejlesztőknek át kell gondolniuk azokat a váratlan, külső kapcsolatok következményeként bekövetkező eseményeket, amelyek befolyásolhatják a szoftver működését. (Például: nyomtatás közben nem áll le, hanem figyelmeztet a hiba lehetséges okára.)<p>
+                    <h2>Hatékonyság: </h2>
+                    <p>A szoftvert úgy kell elkészíteni, hogy az maximálisan használja ki az adott környezet szoftver és hardver erőforrásait. A tervezés során át kell gondolni a szoftver teljesítményét, működési sebességét befolyásoló maximális terhelések paramétereit, és a szélsőséges helyzetek (például a feldolgozandó adatmennyiség megnövekedése) kezelésére alkalmas takarékos megoldásokra kell törekedni.<p>
+                    <h2>Bővíthetőség, rugalmasság: </h2>
+                    <p>A szoftvernek alkalmasnak kell lennie arra, hogy az informatikai háttér fejlődését követni tudja. (Például: ne kelljen a szoftvert teljesen átírni, ha egy új operációs rendszer verzió jelenik meg.)<p>
+                    <h2>Újrafelhasználhatóság: </h2>
+                    <p>A gazdaságossági szempontok megkövetelik, hogy a szoftvert vagy annak részeit többször, más-más fejlesztésekben újra felhasználhassuk, a moduláris felépítésű szoftver moduljait új rendszerek fejlesztése során beépíthessük.<p>
+                    <h2>Hordozhatóság: </h2>
+                    <p>A fejlesztőknek arra kell törekedniük, hogy a szoftver legyen futtatható többféle szoftver és hardverkörnyezetben. Ez a kritérium természetesen nem teljesíthető végletekig, de el kell érni, hogy a szoftver a lehető legnagyobb mértékben független legyen az hardvereszközöktől és az operációs rendszertől. <p> 
+                    <h2>Együttműködési képesség: </h2>
+                    <p>A szoftvernek nyitottnak kell lennie más rendszerek felé, alapvető elvárás, hogy igény esetén együtt tudjon működni más alkalmazásokkal. Biztosítson lehetőséget például arra, hogy a feldolgozás eredményeként kapott kimeneteket más szoftver által feldolgozható formában exportálja. Ez a kritérium abban az esetben is nagyon fontos, ha a meglévő rendszert új szolgáltatásokkal bővíteni szeretnénk.</p>
+                    
+                    <h1 class="mincim">Jó és hibás program összehasonlítása</h1>
+                    <p>A programokat emberek írják, ezért természetesnek mondható, hogy a kódban sok hiba fordul elő. Ezeket a hibákat többnyire figyelmetlenség okozza, de gyakran előfordul, hogy a programozó hozzá nem értéséből adódnak. Az alábbiakban pár egyszerű példával szeretném szemléltetni a jó és a hibás program közötti különbséget a fentiek alapján. </p>
+                    <p>A <b>felhasználóbarátság</b> szempontjából a legfontosabb, hogy egyértelműen és könnyen kezelhető legyen a program. Ezért egyértelmű jelzésekkel kell ellátni a program egyes részeit.</p>
+                    <p>A példa egy olyan program, ami két számot összead, kivon, összeszoroz és eloszt.</p>
+                    <div class = "kepek">
+                    <img src="elsorossz.png" alt="Rossz" class = "elsorossz">
+                    <img src="elsojo.png" alt="Jó" class="elsojo" >
+                    </div>
+                    <p>Ehhez a példához csatolnám a <b>hibatűrést</b> is, ugyanis itt ügyelnünk kell arra, hogy ha például 0-t kapunk osztónak, akkor ne omoljon össze a program.</p>
+                    <p>A <b>hatékonyság</b> szempontjából fontos, hogy a helyes működést minél kevesebb erőforrás igénybevételével tudjuk elérni. </p>
+                    <p>A példa a prímszámvizsgálat algoritmusának egy hatékony, és egy működő, de kevésbé hatékony változatát mutatja be.</p>
+                    <div class="kepek">
+                    <img src="masodikrossz.png" alt="Rossz" class = "masodikrossz">
+                    <img src="masodikjo.png" alt="Rossz" class = "masodikjo">
+                    </div>
+                    <p>Ez a példa az <b>újrafelhasználhatóságra</b> is tökéletes, ugyanis ezt a programrészt akármikor felhasználhatjuk egy későbbi projektben is.</p>
+           </div>
+        </section>
+    </div>
+        
      <script src="script.js"></script>
 </body>
 </html>
