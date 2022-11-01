@@ -667,7 +667,7 @@ td.column4, td.column5 {
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 2.5rem 0 !important;
         
     }
     .nav-menu a{
