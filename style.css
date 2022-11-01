@@ -99,6 +99,75 @@ body {
 
 }
 
+.index-content-text p{
+    margin: 0%;
+}
+.index-content-text {
+    padding: 3vh 5vh;
+}
+.test input{
+    display: none;
+}
+
+.test-head {
+    width: 70%;
+    margin-left: 3vh;
+}
+
+
+.question {
+    background-color: black;
+    border: solid 10px black;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: bold;
+    color: #bdbcc2;
+}
+
+.test-content {
+    width: 70%;
+    margin-left: 3vh;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-top-right-radius: 25px;
+    
+}
+
+input[type="radio"]:checked + label{
+    background-color: rgba(0, 0, 0, 0.35);
+    color: #bdbcc2;
+    border-top-right-radius:50px ;
+    border-bottom-right-radius: 50px;
+
+}
+
+.test label {
+    transition: all ease .4s;
+    cursor: pointer;
+}
+.test h1 {
+    margin-top: 0;
+}
+
+#reset {
+    display: none;
+    float: right;
+}
+#ered {
+    display: inline-block;
+}
+
+.btn-survey-end label{
+    padding: .5rem 1rem ; 
+    color: #111111;
+    background-color: #bdbcc2;
+    border-radius: 50px;
+}
+
+.answer label {
+    padding: 0.5rem 1rem;
+}
+
 .sectionV p {
     font-size: 2vh;
 }
