@@ -361,9 +361,9 @@ nav {
 
 footer{
     background-color: #bdbcc2;
-    height: 200px;
+    height: 30vh;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 5vh;
     padding-left: 20px;
     padding-right: 20px;
     
@@ -374,7 +374,7 @@ footer{
     margin-right: auto;
     width: 90%;
     max-width: 1280px;
-    height: 20vh;
+    height: 25vh;
     
 }
 .footer-column{
@@ -636,6 +636,8 @@ td.column4, td.column5 {
 @media(max-width:576px){
     .container-table100{padding-left:15px;padding-right:15px}
 
+    
+
 }
 
 
@@ -773,6 +775,30 @@ td.column4, td.column5 {
     .footer-label{
         font-size: 3vw;
     }
+    .kepek img{
+        width: 80vw;
+    }
+    .content-var p, h3{
+        padding-left: 0;
+    }
+    .question{
+        font-size: 80%;
+    }
+    .test .testcontainer {
+        margin: 3vh;
+        width: 100%;
+        padding: 5% 0%;
+    }
+    .answer label{
+        padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    }
+    
+}
+@media screen and (max-width: 550px){
+    .c_example{
+        font-size: 2.6vw;
+    }
+
 }
 
 @media screen and (max-width:1590px) {
@@ -784,7 +810,8 @@ td.column4, td.column5 {
 
 .mincim {
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
+    line-height: normal;
 }
 
 .elsorossz {
