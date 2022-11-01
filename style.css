@@ -1,3 +1,4 @@
+* {scroll-behavior: smooth;}
 html {
     margin: 0;
     height: 100%;
@@ -5,7 +6,7 @@ html {
     padding: 0;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
+
 }
 body {
     
@@ -41,6 +42,11 @@ body {
 .vararr {
     font-size: 4vw !important;
 } 
+
+.vararr * {
+    text-decoration: none;
+    color: white;
+}
 
 .header p {
     margin: 0;
@@ -207,14 +213,15 @@ nav {
 }
 
 .codesnippet {
-    border: 5px solid #1c1c1c;
-    border-radius: 25px;
-    transition: .1s;
-    box-shadow: 2px 3px 8px rgba(0,0,0,.5);
     display: inline-flex;
-    background-color: #1c1c1c;
 }
 
+.codesnippet img {
+    border: 5px solid #1c1c1c;
+    border-radius: 15px;
+    box-shadow: 2px 3px 8px rgba(0,0,0,.5);
+    transform: translateY(40%);
+}
 
 
 .sectionV {
