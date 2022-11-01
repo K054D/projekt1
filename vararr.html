@@ -49,24 +49,28 @@
                 <p>A változók két fontos tulajdonságát külön ki kell emelni: az életciklust, és az érvényességi kört. A memória gazdaságossága érdekében a változónak az első használat előtt helyet kell biztosítani, a használat befejezésekor pedig fel kell szabadítani a területét. Az érvényességi kör segít meghatározni a változó életciklusát. A változó rendszerint a program kód valamelyik érvényességi körében van, tehát a változó a programrész aktiválódásakor keletkezik, majd megszűnik, amikor a programrész véget ér. 
                     Míg egy egyszerű változó egyetlen egészet, vagy szöveget tartalmaz, addig léteznek programnyelvek, amik megengedik az érték mellett az adat típusának tárolását is. Ezek a nyelvek paraméter szerinti többalakú függvények írását is lehetővé teszik. Ezek a változók az egyszerűekhez hasonlóan működnek, de a típusukat is hordozzák. </p>
                 
-                <p>A változók kétfélék lehetnek, van, amelyik új értéket is felvehet, és van, amelyik nem. <a href="#" id="codesnippet-a" class="codesnippet" title="Kattints a másoláshoz" aria-valuetext='string name = "Jhon";' onclick=copyClipboard(id)><img src="codesnippet-strvar.png" alt="stringvar" ></a></p>
+                <p>A változók kétfélék lehetnek, van, amelyik új értéket is felvehet, és van, amelyik nem. </p>
                 
                 <h3>Változónév</h3>
                 <p>A változók olyan nevet kaphatnak, amit a programozási nyelv szintaktikája megenged, ajánlatos a megállapodásokat betartani, de ezeken túl egyéni ízlés kérdése.</p>
                 <p>A C és a hozzá hasonló programozási nyelvekben a változók neve állhat betűkből, számokból, és tartalmazhatja az aláhúzás jelet, de mindenképpen betűvel kell kezdődnie. </p>
                 <p>Egyes programnyelvekben a változó neve meghatározza a benne tárolható adat típusát. </p>
+                <p>Szöveg változó deklarálása C#-ban: <a href="#" id="codesnippet-a" class="codesnippet" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-strvar.png" alt="stringvar" ></a></p>
                 
                 <h3>Érvényességi kör, hatókör</h3>
                 <p>Érvényességi kör és hatókör megadja, hogy a változót a programszöveg mely részén használhatjuk, és a végrehajtás közben milyen körben rendelkezik majd értékkel.</p>
                 <p>A legtöbb programozási nyelvben a változók többféle érvényességi körrel is rendelkezhetnek. A változó érvényességi köre a programkód azon része, ahol a változó nevének jelentése van (használható, ismert). 
                 A globális változóra vagy egy korlátlan érvényességi körű változóra a program bármely részéből lehet hivatkozni. </p>
                 <p>A változóra az érvényességi körén kívülről hivatkozni hibás és értelmetlen. </p>
+                <p><a href="#" id="codesnippet-g" class="codesnippet" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-forloop.png" alt="forloop" ></a></p>
+                <p>A példában "i" változó csak a ciklus közben létezik, csak itt lehet rá hivatkozni.</p>
                 
                 <h3>Memóriabeli helyfoglalás</h3>
                 <p>A létrehozott változó értékkel rendelkezik, ami valahol a számítógép memóriájában helyezkedik el. A program a memóriában helyezi el az adatobjektumokat, majd az újrafelhasználhatóság miatt az objektumok törlődnek, ha már nincs szükség a bennük tárolt értékre.</p>
                 <p>A memóriaváltozók kezelése nagymértékben függ a nyelvi környezettől. Néhány nyelvi megvalósítás könnyen felismeri azokat a változókat, amikre már nincs szükség a függvény befejeződése után. A lokális változók területe a végrehajtási verem részét képezi, ami automatikusan felszabadul, amikor a függvény végrehajtása befejeződik.</p>
                 <p>Az egyéb objektumoknak a heap-ben, vagy a memória éppen nem használt közös részén lehet helyet foglalni. Ezek a részek automatikusan nem tudnak felszabadulni, ezért kezdeményezni kell megszűnésüket, ha már nincs szükség rájuk. </p>
                 <p>A szükséges memória lefoglalása főleg az összetett adatstruktúrák esetén fontos tényező. Egy változó mutathat egy dinamikusan létrehozott adatstruktúrára, ilyen esetben az adatszerkezet részeire nem közvetlenül a változóval tudunk hivatkozni, a változó mutat a létrejött struktúrára. Ez biztosítja a GC-s nyelvek hulladékgyűjtési módszerének működését, hiszen amikor egy adatszerkezetre nincs már egyetlen mutató sem, akkor az felszabadítható.</p>
+                
                
         </div>
     </section>
@@ -232,10 +236,9 @@
             <p>Ez  a  new operátorral történik, ekkor kell az elemszámot meghatározni. Fontos, hogy a tömbök méretének statikusan, azaz fordítási időben, ki kell derülnie!</p>
             <p>A tömb menet közben nem méretezhető át.</p>
             <p>Méretét többféleképp is megadhatjuk.</p>
-            <p>C#: <a href="#" class="codesnippet" id="codesnippet-b" title="Kattints a másoláshoz" aria-valuetext='int[] array = new int[n];' onclick=copyClipboard(id)><img src="codesnippet-newintarr.png" alt="intarray" ></a> vagy <a href="#" class="codesnippet" id="codesnippet-c" title="Kattints a másoláshoz" aria-valuetext='int[] array;
-array = new int[n];' onclick=copyClipboard(id)><img src="codesnippet-newintarr2.png" alt="intarray2" ></a></p>
+            <p>C#: <a href="#" class="codesnippet" id="codesnippet-b" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-newintarr.png" alt="intarray" ></a> vagy <a href="#" class="codesnippet" id="codesnippet-c" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-newintarr2.png" alt="intarray2" ></a></p>
             <p>A tömb elemeit megadhatjuk a program készítése közben is, ekkor a kezdőértékeket kapcsos zárójelek között fel kell sorolnunk.</p>
-            <p>C#: <a href="#" class="codesnippet" id="codesnippet-d" title="Kattints a másoláshoz" aria-valuetext='int[] array = new int[5] { 1, 2, 3, 4, 5 };' onclick=copyClipboard(id)><img src="codesnippet-valarr1.png" alt="valuearr" ></a> vagy <a href="#" class="codesnippet" id="codesnippet-e" title="Kattints a másoláshoz" aria-valuetext='int[] array = { 1, 2, 3, 4, 5 };' onclick=copyClipboard(id)><img src="codesnippet-valarr2.png" alt="valuearr2" ></a></p>
+            <p>C#: <a href="#" class="codesnippet" id="codesnippet-d" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-valarr1.png" alt="valuearr" ></a> vagy <a href="#" class="codesnippet" id="codesnippet-e" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-valarr2.png" alt="valuearr2" ></a></p>
             <p>Megjegyzés: A numerikus tömbelemek alapértelmezett kezdőértékei nullák.</p>
 
             <h3>A tömb elemeihez való hozzáférés</h3>
@@ -243,10 +246,9 @@ array = new int[n];' onclick=copyClipboard(id)><img src="codesnippet-newintarr2.
             <p>A tömb Length tulajdonsága a tömb elemszámát adja meg.</p>
             <p>Figyelnünk kell arra, hogy a tömbnek csak azokat az elemeit érjük el, amik léteznek. Ha olyan indexre  hivatkozunk  egy  tömbben,  ami  nem  létezik,  akkor  a  programunk  hibával  leáll.</p>
             <p>C#:
-                <a href="#" class="codesnippet" id="codesnippet-g" title="Kattints a másoláshoz" aria-valuetext='int[] array = { 1, 2, 3, 4, 5 };
-return array[2];' onclick=copyClipboard(id)><img src="codesnippet-arrindex.png" alt="arrayindex" ></a>
-                 <a href="#" class="codesnippet" id="codesnippet-f" title="Kattints a másoláshoz" aria-valuetext='int[] array = { 1, 2, 3, 4, 5 };
-Console.WriteLine(array[10]);' onclick=copyClipboard(id)><img src="codesnippet-sysioore.png" alt="Sys.outofrangeexeption" ></a>
+                <a href="#" class="codesnippet" id="codesnippet-i" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-arrindex.png" alt="arrayindex" ></a>
+                 <a href="#" class="codesnippet" id="codesnippet-f" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-sysioore.png" alt="Sys.outofrangeexeption" ></a>
+<a href="#" class="codesnippet" id="codesnippet-h" title="Kattints a másoláshoz" onclick=copyClipboard(id)><img src="codesnippet-arraylength.png" alt="Array.Lenght" ></a>
 </p>
 <br>
 <br>
