@@ -782,3 +782,32 @@ td.column4, td.column5 {
     }
 }
 
+.mincim {
+    text-align: center;
+    font-size: 40px;
+}
+
+.elsorossz {
+    border: 1px solid red;
+}
+
+.elsojo {
+    border: 1px solid green;
+}
+
+.masodikrossz {
+    border: 1px solid red;
+}
+
+.masodikjo {
+    border: 1px solid green;
+}
+
+.kepek{
+    text-align: center;
+}
+.kepek img {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}

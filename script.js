@@ -19,6 +19,8 @@ function closeMenu() {
 }
 
 function copyClipboard(id){
+    if (id == "") {}
+
     var Text = document.getElementById(id)
     navigator.clipboard.writeText(Text.ariaValueText);
 }
